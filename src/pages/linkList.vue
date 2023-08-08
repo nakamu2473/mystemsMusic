@@ -27,11 +27,16 @@ export default {
           <a v-if="nakami.spotify_url" :href="nakami.spotify_url"   target="_blank" rel="noopener noreferrer">
             {{ nakami.music_name }}
           </a>
-          <p v-if="!nakami.spotify_url" class="music_name">
+          <span v-if="!nakami.spotify_url" class="music_name">
             {{ nakami.music_name }}
-          </p>
+          </span>
+          <span class="artist_name">
+             / {{ nakami.artist_name }}
+          </span>
+
         </template>
-        <div class="description">{{  nakami.comment}}</div>
+          <template #artist_name> </template>
+        
         <a :href="nakami.mystems_url"   target="_blank" rel="noopener noreferrer">
           {{ nakami.mystems_name }}さん
         </a>
@@ -50,6 +55,10 @@ export default {
 }
 .music_name {
   color : #4E94AA
+}
+.artist_name {
+  color : #4E94AA;
+  font-size: 1rem;
 }
 
 </style>
