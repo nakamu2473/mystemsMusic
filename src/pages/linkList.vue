@@ -36,7 +36,7 @@ export default {
 
         </template>
           <template #artist_name> </template>
-        
+          {{ nakami.comment }}
         <a :href="nakami.mystems_url"   target="_blank" rel="noopener noreferrer">
           {{ nakami.mystems_name }}さん
         </a>
