@@ -14,7 +14,7 @@ export default {
 <template>
   <header>
     <div class="wrapper">
-      <HelloWorld msg="みすてむずみゅーじっく!!" />
+      <HelloWorld msg="みすてむずみゅーじっく!!!!" />
     </div>
   </header>
     <TheHeader />
