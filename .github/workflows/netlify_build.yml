@@ -16,7 +16,7 @@ jobs:
       # 「./dist」にビルド結果が生成する。好きなビルドに変えましょう。
       - uses: actions/setup-node@v1
         with:
-          node-version: 12.x
+          node-version: '20'
       - run: npm ci
       - run: npm run build
 
